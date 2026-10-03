@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | AI Interviewer</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+
+<body>
+
+    <main class="auth-page">
+
+        <div class="auth-container">
+
+            <!-- Logo -->
+            <a href="../index.html" class="auth-logo">
+                <div class="brand-icon">
+                    <span>✦</span>
+                </div>
+
+                <div>
+                    <strong>AI</strong> Interviewer
+                </div>
+            </a>
+
+
+            <!-- Register Card -->
+            <div class="auth-card">
+
+                <div class="auth-header">
+                    <h1>Create Account</h1>
+                    <p>Start practicing smarter with AI-powered interviews.</p>
+                </div>
+
+
+                <form id="registerForm" novalidate>
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                        >
+
+                        <small
+                            class="error-message"
+                            id="nameError"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="registerEmail">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                        >
+
+                        <small
+                            class="error-message"
+                            id="registerEmailError"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <label for="registerPassword">
+                            Password
+                        </label>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="registerPassword"
+                                name="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="registerPasswordToggle"
+                                aria-label="Show password"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="registerPasswordError"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password"
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="confirmPasswordToggle"
+                                aria-label="Show password"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="confirmPasswordError"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- Terms -->
+                    <label class="remember-me register-terms">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                        >
+
+                        <span>
+                            I agree to the Terms & Conditions
+                        </span>
+
+                    </label>
+
+                    <small
+                        class="error-message"
+                        id="termsError"
+                    ></small>
+
+
+                    <!-- Submit -->
+                    <button
+                        type="submit"
+                        class="auth-submit"
+                    >
+                        Create Account
+                    </button>
+
+                </form>
+
+
+                <!-- Divider -->
+                <div class="auth-divider">
+                    <span>OR</span>
+                </div>
+
+
+                <!-- Login -->
+                <p class="auth-switch">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Log In
+                    </a>
+
+                </p>
+
+            </div>
+
+
+            <!-- Back -->
+            <a
+                href="../index.html"
+                class="back-home"
+            >
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script src="../js/register.js"></script>
+
+</body>
+</html>

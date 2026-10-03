@@ -405,3 +405,24 @@
         gap: 15px;
     }
 }
+/* =========================
+   REGISTER PAGE
+========================= */
+
+.register-terms {
+    margin-top: 4px;
+    align-items: flex-start;
+}
+
+.register-terms input {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.register-terms span {
+    line-height: 1.5;
+}
+
+#termsError {
+    margin-top: 6px;
+}
