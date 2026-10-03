@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Setup | AI Interviewer</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/interview.css">
+</head>
+
+<body class="interview-setup-page">
+
+    <nav class="dashboard-navbar">
+    <div class="nav-container">
+
+        <a href="../index.html" class="logo">
+            AI Interviewer
+        </a>
+
+        <div class="dashboard-nav-links">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="history.html">History</a>
+            <a href="profile.html">Profile</a>
+        </div>
+
+        <a href="interview-setup.html" class="nav-start-btn">
+            Start Interview
+        </a>
+
+    </div>
+</nav>
+
+
+    <main class="setup-container">
+
+        <section class="setup-header">
+            <span class="section-label">AI MOCK INTERVIEW</span>
+
+            <h1>Configure Your Interview</h1>
+
+            <p>
+                Customize your interview experience based on your role,
+                experience, difficulty and interview type.
+            </p>
+        </section>
+
+
+        <form id="interviewSetupForm" class="setup-card">
+
+            <!-- Role -->
+
+            <div class="setup-field">
+                <label for="role">Target Role</label>
+
+                <select id="role">
+                    <option value="">Select your role</option>
+                    <option value="python-developer">Python Developer</option>
+                    <option value="full-stack-developer">
+                        Full Stack Developer
+                    </option>
+                    <option value="ai-ml-engineer">
+                        AI/ML Engineer
+                    </option>
+                    <option value="data-scientist">
+                        Data Scientist
+                    </option>
+                    <option value="software-engineer">
+                        Software Engineer
+                    </option>
+                </select>
+
+                <small id="roleError" class="field-error"></small>
+            </div>
+
+
+            <!-- Experience -->
+
+            <div class="setup-field">
+                <label for="experience">Experience Level</label>
+
+                <select id="experience">
+                    <option value="">Select experience</option>
+                    <option value="fresher">Fresher</option>
+                    <option value="0-1">0–1 Years</option>
+                    <option value="1-3">1–3 Years</option>
+                    <option value="3-plus">3+ Years</option>
+                </select>
+
+                <small id="experienceError" class="field-error"></small>
+            </div>
+
+
+            <!-- Difficulty -->
+
+            <div class="setup-field">
+                <label for="difficulty">Difficulty</label>
+
+                <div class="option-grid">
+
+                    <label class="option-card">
+                        <input
+                            type="radio"
+                            name="difficulty"
+                            value="easy"
+                        >
+                        <span>Easy</span>
+                    </label>
+
+                    <label class="option-card">
+                        <input
+                            type="radio"
+                            name="difficulty"
+                            value="medium"
+                        >
+                        <span>Medium</span>
+                    </label>
+
+                    <label class="option-card">
+                        <input
+                            type="radio"
+                            name="difficulty"
+                            value="hard"
+                        >
+                        <span>Hard</span>
+                    </label>
+
+                </div>
+
+                <small id="difficultyError" class="field-error"></small>
+            </div>
+
+
+            <!-- Interview Type -->
+
+            <div class="setup-field">
+                <label for="interviewType">Interview Type</label>
+
+                <div class="option-grid type-grid">
+
+                    <label class="option-card">
+                        <input
+                            type="radio"
+                            name="interviewType"
+                            value="technical"
+                        >
+                        <span>Technical</span>
+                    </label>
+
+                    <label class="option-card">
+                        <input
+                            type="radio"
+                            name="interviewType"
+                            value="hr"
+                        >
+                        <span>HR</span>
+                    </label>
+
+                    <label class="option-card">
+                        <input
+                            type="radio"
+                            name="interviewType"
+                            value="mixed"
+                        >
+                        <span>Mixed</span>
+                    </label>
+
+                    <label class="option-card">
+                        <input
+                            type="radio"
+                            name="interviewType"
+                            value="coding"
+                        >
+                        <span>Coding</span>
+                    </label>
+
+                </div>
+
+                <small id="interviewTypeError" class="field-error"></small>
+            </div>
+
+
+            <!-- Number of Questions -->
+
+            <div class="setup-field">
+                <label for="questions">Number of Questions</label>
+
+                <select id="questions">
+                    <option value="">Select number</option>
+                    <option value="5">5 Questions</option>
+                    <option value="10">10 Questions</option>
+                    <option value="15">15 Questions</option>
+                    <option value="20">20 Questions</option>
+                </select>
+
+                <small id="questionsError" class="field-error"></small>
+            </div>
+
+
+            <button type="submit" class="setup-submit">
+                Start Interview
+                <span>→</span>
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <script src="../js/interview.js"></script>
+
+</body>
+</html>
