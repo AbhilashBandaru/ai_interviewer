@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Interview Room | AI Interviewer</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/interview.css">
+</head>
+
+<body class="interview-room-page">
+
+    <!-- ================================
+         INTERVIEW NAVBAR
+    ================================= -->
+
+    <nav class="interview-navbar">
+
+        <div class="interview-nav-container">
+
+            <a href="../index.html" class="interview-logo">
+                AI Interviewer
+            </a>
+
+            <div class="interview-status">
+                <span class="status-dot"></span>
+                AI Interview in Progress
+            </div>
+
+            <button
+                type="button"
+                id="exitInterview"
+                class="exit-interview-btn"
+            >
+                Exit Interview
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================================
+         INTERVIEW ROOM
+    ================================= -->
+
+    <main class="interview-container">
+
+        <!-- HEADER -->
+
+        <section class="interview-header">
+
+            <div>
+
+                <span class="section-label">
+                    TECHNICAL INTERVIEW
+                </span>
+
+                <h1>
+                    AI Interview Room
+                </h1>
+
+            </div>
+
+            <div class="question-progress">
+
+                <span>
+                    Question
+                </span>
+
+                <strong id="currentQuestion">
+                    1
+                </strong>
+
+                <span>
+                    of
+                </span>
+
+                <strong id="totalQuestions">
+                    10
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROGRESS BAR -->
+
+        <div class="interview-progress">
+
+            <div
+                id="questionProgress"
+                class="question-progress-fill"
+            ></div>
+
+        </div>
+
+
+        <!-- QUESTION CARD -->
+
+        <section class="question-card">
+
+            <div class="ai-avatar">
+                AI
+            </div>
+
+            <div class="question-content">
+
+                <span class="question-label">
+                    AI INTERVIEWER
+                </span>
+
+                <h2 id="questionText">
+                    Explain the difference between a
+                    list and a tuple in Python.
+                </h2>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANSWER AREA -->
+
+        <section class="answer-section">
+
+            <div class="answer-header">
+
+                <label for="answer">
+                    Your Answer
+                </label>
+
+                <span id="characterCount">
+                    0 / 2000
+                </span>
+
+            </div>
+
+            <textarea
+                id="answer"
+                maxlength="2000"
+                placeholder="Type your answer here..."
+            ></textarea>
+
+            <small
+                id="answerError"
+                class="field-error"
+            ></small>
+
+        </section>
+
+
+        <!-- INTERVIEW CONTROLS -->
+
+        <section class="interview-controls">
+
+            <div class="timer-container">
+
+                <span class="timer-label">
+                    Time Remaining
+                </span>
+
+                <strong id="timer">
+                    02:00
+                </strong>
+
+            </div>
+
+            <button
+                type="button"
+                id="submitAnswer"
+                class="submit-answer-btn"
+            >
+                Submit Answer
+                <span>→</span>
+            </button>
+
+        </section>
+
+
+        <!-- QUESTION NAVIGATION -->
+
+        <div class="question-navigation">
+
+            <span id="questionStatus">
+                Answer the question and submit to continue.
+            </span>
+
+        </div>
+
+    </main>
+
+
+    <script src="../js/interview.js"></script>
+
+</body>
+
+</html>
